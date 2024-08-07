@@ -17,7 +17,7 @@ function App() {
       (row, i)=>{
 
         return row.map((cell,j)=>{
-          return <div>{i}-{j}</div>
+          return <div className='cell'>{i}-{j}</div>
         })
           
       }

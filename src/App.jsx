@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function eachOne(){
-  
+
 }
 
 function App() {
@@ -12,15 +12,18 @@ function App() {
  
  return <div>
   <h1>Tic Tac Toe</h1>
-  {TIC_TAC_TOE.map(
-    (row, i)=>{
+  <div>
+    {TIC_TAC_TOE.map(
+      (row, i)=>{
 
-      return row.map((cell,j)=>{
-        return <div>{i}-{j}</div>
-      })
-        
-    }
-  )}
+        return row.map((cell,j)=>{
+          return <div>{i}-{j}</div>
+        })
+          
+      }
+    )}
+  </div>
+  
  </div>
 }
 
